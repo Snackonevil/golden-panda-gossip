@@ -1,10 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Dongle", sans-serif;
+}
+
 main {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.panda-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 2rem 0rem 2rem;
+    background-color: rgb(248, 225, 160);
+    color: rgb(194, 179, 112);
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 4rem;
+}
+
+.float-left {
+    float: left;
 }
 
 #chat-window {
-    display: block;
     background-color: rgb(248, 225, 160);
     height: 300px;
     width: 800px;
@@ -14,8 +54,7 @@ main {
 
 #chat-form {
     display: flex;
-    align-self: center;
-    width: 800px;
+    width: 80%;
     margin-top: 2rem;
 }
 input {

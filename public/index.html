@@ -5,22 +5,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Golden Panda Gossip</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <main>
-            <section id="chat-window"></section>
-
-            <form id="chat-form">
-                <input
-                    id="msg"
-                    type="text"
-                    placeholder="Enter Message"
-                    required
-                    autocomplete="off"
-                />
-                <button class="btn"><i></i>Send</button>
-            </form>
+        <nav class="panda-nav">
+            <div class="container flex space-between">
+                <h1>GOLDEN PANDA GOSSIP</h1>
+                <h2>LATEST GOSSIP</h2>
+            </div>
+        </nav>
+        <main
+            class="container"
+            style="border: 1px solid black; border-radius: 10px"
+        >
+            <div class="">
+                <aside>users and stuff</aside>
+            </div>
+            <div>
+                <section id="chat-window" class=""></section>
+                <div class="container" style="border: 1px solid black">
+                    <form id="chat-form" class="">
+                        <input
+                            id="msg"
+                            type="text"
+                            placeholder="Enter Message"
+                            required
+                            autocomplete="off"
+                        />
+                        <button class="btn btn-outline-primary">
+                            <i></i>Send
+                        </button>
+                    </form>
+                </div>
+            </div>
         </main>
         <script src="/socket.io/socket.io.js"></script>
         <script src="./js/main.js"></script>
