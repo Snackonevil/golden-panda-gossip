@@ -20,10 +20,10 @@ chatForm.addEventListener("submit", e => {
 });
 
 // Output to DOM
-function outputMsg(msg) {
+function outputMsg(message) {
     const div = document.createElement("div");
     div.classList.add("message");
-    div.innerHTML = `<p>USER <span>3:23pm</span></p>
-    <p>${msg}</p>`;
+    div.innerHTML = `<p>${message.user} <span>${message.time}</span></p>
+    <p>${message.text}</p>`;
     document.getElementById("chat-window").appendChild(div);
 }
