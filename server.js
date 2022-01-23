@@ -2,7 +2,6 @@ const path = require("path");
 const http = require("http");
 const express = require("express");
 const socketio = require("socket.io");
-const e = require("express");
 
 const app = express();
 const server = http.createServer(app);
@@ -24,6 +23,7 @@ io.on("connection", socket => {
         io.emit("message", "a USER has left");
     });
 
+    // Listens for 'chat-msg' on client and emits msg
     socket.on("chat-msg", msg => {
         io.emit("message", msg);
     });
