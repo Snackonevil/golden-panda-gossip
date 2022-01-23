@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-window {
+    display: block;
+    background-color: wheat;
+    height: 300px;
+    width: 800px;
+    margin: auto;
+}
+
+#chat-form {
+    display: flex;
+    align-self: center;
+    width: 800px;
+    margin-top: 2rem;
+}
+input {
+    width: 100%;
+}
