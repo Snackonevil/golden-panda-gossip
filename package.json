@@ -1,15 +1,16 @@
 {
-  "name": "golden-panda-gossip",
-  "version": "1.0.0",
-  "description": "Chat app for the Golden Pandas",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Kevin Lacson",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.17.2",
-    "socket.io": "^4.4.1"
-  }
+    "name": "golden-panda-gossip",
+    "version": "1.0.0",
+    "description": "Chat app for the Golden Pandas",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "author": "Kevin Lacson",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.2",
+        "socket.io": "^4.4.1"
+    }
 }
