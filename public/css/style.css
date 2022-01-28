@@ -41,6 +41,7 @@ main {
   background-color: gold;
   border-radius: 20px;
   padding: 30px;
+  margin-top: 2%;
 }
 
 .welcome img {
@@ -64,6 +65,7 @@ main {
 input {
   height: 50px;
   width: 100%;
+  border: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 5px 20px;
@@ -73,6 +75,7 @@ input {
 .user-form button {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border: 0;
   background-color: green;
   color: white;
   font-size: 20px;
@@ -112,14 +115,17 @@ input {
   max-width: 1000px;
   height: 600px;
   background-color: gold;
-  border-radius: 20px;
-  padding: 30px;
+  border-radius: 10px;
+  padding: 30px 0px;
+  margin-top: 2%;
 }
 
 .left-panel {
   width: 23%;
   height: 100%;
   background-color: khaki;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .left-panel h1 {
@@ -134,11 +140,12 @@ input {
 
 #chat-window {
   background-color: white;
-  padding: 0.5rem;
+  padding: 1rem 1.5rem;
   height: 75%;
   width: 100%;
   margin: auto;
   overflow-y: scroll;
+  border-top-left-radius: 20px;
 }
 
 #msg {
@@ -172,13 +179,14 @@ input {
   align-items: center;
   background-color: lightgoldenrodyellow;
   height: 25%;
+  border-bottom-left-radius: 20px;
 }
 
 .message {
   background-color: lightgoldenrodyellow;
   border-radius: 8px;
   padding: 5px 10px;
-  box-shadow: lightslategray 3px 3px 5px;
+  box-shadow: lightgray 3px 3px 5px;
 }
 
 .message-data {
