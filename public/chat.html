@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Golden Panda Gossip</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-            integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-            crossorigin="anonymous"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/style.css" />
-    </head>
-    <body>
-        <nav class="panda-nav">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Panda Gossip</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- <nav class="panda-nav">
             <div class="container flex space-between">
                 <h1>GOLDEN PANDA GOSSIP</h1>
             </div>
-        </nav>
-        <main
-            class="container"
-            style="border: 1px solid black; border-radius: 10px"
-        >
-            <div class="left-panel">
-                <aside>PANDAS</aside>
-            </div>
-            <div class="right-panel">
-                <section id="chat-window" class=""></section>
-                <div class="container" style="border: 1px solid black">
-                    <form id="chat-form" class="">
-                        <input
-                            id="msg"
-                            type="text"
-                            placeholder="Enter Message"
-                            required
-                            autocomplete="off"
-                        />
-                        <button class="btn btn-outline-primary">
-                            <i class="fas fa-paper-plane"></i>Send
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </main>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="/socket.io/socket.io.js"></script>
-        <script src="./js/main.js"></script>
-    </body>
+        </nav> -->
+    <main class="container chat-main">
+      <div class="left-panel">
+        <h1>PANDAS</h1>
+        <ul class="user-list">
+          <li class="user">Kevin</li>
+        </ul>
+      </div>
+      <div class="right-panel">
+        <section id="chat-window" class="">
+          <div class="message">
+            <div class="message-data">Kevin 9:02pm</div>
+            <div class="message-text">Hello</div>
+          </div>
+        </section>
+        <div class="message-panel">
+          <form id="chat-form" class="">
+            <input
+              id="msg"
+              type="text"
+              placeholder="Enter Message"
+              required
+              autocomplete="off"
+            />
+            <button class="btn"><i class="fas fa-paper-plane"></i>Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
